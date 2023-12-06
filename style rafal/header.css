@@ -1,0 +1,45 @@
+/* font-family: 'Italiana', sans-serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Work Sans', sans-serif; */
+
+header {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+
+    background-color: #D9DFDC75; 
+
+    /* Had probleem met transparent : dit zorgde dat het werkt */
+    position: fixed;
+    top:0;
+    width: 100%;
+
+
+    z-index: 999;
+}
+
+nav ul li {
+
+    display: inline-block;
+   
+}
+
+nav ul li a {
+
+    color: #201C1C;
+    text-decoration: none;
+    padding: 0px 15px;
+
+    font-size: 1.125rem;
+}
+
+.h2logo {
+
+    font-family: 'Italiana', sans-serif;
+    font-size: 2.8rem;
+
+
+
+}
