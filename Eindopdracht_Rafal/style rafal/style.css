@@ -10,6 +10,7 @@ body {
 
     margin: 0;
     font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
 }
 
 img {
@@ -19,7 +20,7 @@ img {
 }
 
 h1, h2, h3 {
-
+ 
     font-family: 'Josefin Slab', serif;
     
 }
@@ -114,4 +115,93 @@ tr td{
     display: flex;
     justify-content: space-around;
     width: 100%;
+}
+
+
+/* MENU */
+
+.container {
+
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category_box {
+
+    display: flex;
+    gap: 50px;
+
+}
+
+.box_food_container {
+
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    
+}
+
+.box_food_left {
+
+    width: 50%;
+}
+.box_food_right {
+
+    width: 50%;
+}
+
+.box_info {
+
+    background: #E3E8E5;
+    border-radius: 15px;
+    width: 100%;
+    margin: 20px;
+    padding: 20px 0px;
+   
+}
+
+.menu_category_text {
+
+    text-align: center;
+}
+
+.food {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.food_name {
+
+    font-family: 'Josefin Slab', serif;
+    font-size: 24px;
+}
+
+.food_box_top {
+
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.food_border_bottom {
+    
+    border-bottom: 1px solid black;
+    border-bottom-style: dashed;
+    
+    width: 70%;
+  
+   
+}
+
+.food_box_bottom {
+
+    width: auto;
 }

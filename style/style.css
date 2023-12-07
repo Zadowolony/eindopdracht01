@@ -12,11 +12,11 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
-img {
+/* img {
 
-    /*width: 100%;*/
+    width: 100%;
     height: auto;
-}
+} */
 
 h1, h2, h3 {
 
@@ -119,12 +119,14 @@ tr td{
 }
 
 .about{
+    position: relative;
     margin: 20px;
     display: flex;
     flex-direction: row;
     width: 1200px;
+    margin: auto;
     padding: 60px 120px;
-    position: relative;
+    
 }
 
 .text{
@@ -154,7 +156,9 @@ tr td{
     top: 20px;
     right: 0;
     border-radius: 15px 0 0 15px;
+    
 } 
+
 
 .rl{
     position: absolute;
