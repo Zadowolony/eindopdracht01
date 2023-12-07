@@ -13,22 +13,38 @@ function openCourse() {
     content2.style.transform = "translateX(100%)";
     content3.style.transform = "translateX(100%)";
     content4.style.transform = "translateX(100%)";
+    content1.style.transitionDelay = "0.3s";
+    content2.style.transitionDelay = "0s";
+    content3.style.transitionDelay = "0s";
+    content4.style.transitionDelay = "0s";
 }
 function openPizza() {
     content1.style.transform = "translateX(100%)";
     content2.style.transform = "translateX(0)";
     content3.style.transform = "translateX(100%)";
     content4.style.transform = "translateX(100%)";
+    content1.style.transitionDelay = "0s";
+    content2.style.transitionDelay = "0.3s";
+    content3.style.transitionDelay = "0s";
+    content4.style.transitionDelay = "0s";
 }
 function openDrinks() {
     content1.style.transform = "translateX(100%)";
     content2.style.transform = "translateX(100%)";
     content3.style.transform = "translateX(0)";
     content4.style.transform = "translateX(100%)";
+    content1.style.transitionDelay = "0s";
+    content2.style.transitionDelay = "0s";
+    content3.style.transitionDelay = "0.3s";
+    content4.style.transitionDelay = "0s";
 }
 function openDessert() {
     content1.style.transform = "translateX(100%)";
     content2.style.transform = "translateX(100%)";
     content3.style.transform = "translateX(100%)";
     content4.style.transform = "translateX(0)";
+    content1.style.transitionDelay = "0s";
+    content2.style.transitionDelay = "0s";
+    content3.style.transitionDelay = "0s";
+    content4.style.transitionDelay = "0.3s";
 }
