@@ -6,165 +6,1362 @@
     <link rel="stylesheet" href="style rafal/style.css">
     <link rel="stylesheet" href="style rafal/header.css">
     <link rel="stylesheet" href="style rafal/btn.css">
+    <link rel="stylesheet" href="style rafal/food_menu.css">
  
     
     <title>menu</title>
 </head>
 <body>
+<main>
 
-    <main>
-    
-        <div class="container">
-    
-            <div class="menuH2">
-                <h2>Menu</h2>
-            </div>
-            <div class="category_box">
-                <h2>Courses</h2>
-                <h2>Pizza</h2>
-                <h2>Drinks</h2>
-                <h2>Dessert</h2>
-            </div>
-            <div class="box_food_container">
-    
-                <div class="box_food_left">
-    
-                    <div class="box_info">
-                        <div class="menu_categry">
-                            <div class="menu_category_text"><h2>Lorem
-                            </h2></div>
-                        </div>
-                        <div class="food">
-                            <div class="food_box_top">
-                                <div class="food_name">Lorem ipsum</div>
-                                <div class="food_border_bottom"></div>
-                                <div>10€</div>
-                            </div>
-                            <div class="food_box_bottom">
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium,
-                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. </p>
-                            </div>
-                        </div>
+    <div class="container">
 
-                        <div class="food">
-                            <div class="food_box_top">
-                                <div>Lorem ipsum</div>
-                                <div class="food_border_bottom"></div>
-                                <div>10€</div>
-                            </div>
-                            <div class="food_box_bottom">
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium,
-                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. </p>
-                            </div>
-                        </div>
-                       
-
-
-                    </div>
-    
-                    <div class="box_info">
-                        <div class="menu_categry">
-                            <div>Lorem</div>
-                        </div>
-                        <div class="food">
-                            <div>
-                                <div>Lorem ipsum</div>
-                                <div></div>
-                                <div>10€</div>
-                            </div>
-                            <div>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium,
-                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. </p>
-                            </div>
-                        </div>
-                        <div class="food">
-                            <div>
-                                <div>Lorem ipsum</div>
-                                <div></div>
-                                <div>10€</div>
-                            </div>
-                            <div>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium,
-                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                </div>
-    
-                <div class="box_food_right">
-    
-                    <div class="box_info">
-                        <div class="menu_categry">
-                            <div>Lorem</div>
-                        </div>
-                        <div class="food">
-                            <div>
-                                <div>Lorem ipsum</div>
-                                <div></div>
-                                <div>10€</div>
-                            </div>
-                            <div>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium,
-                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. </p>
-                            </div>
-                        </div>
-                        <div class="food">
-                            <div>
-                                <div>Lorem ipsum</div>
-                                <div></div>
-                                <div>10€</div>
-                            </div>
-                            <div>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium,
-                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="box_info">
-                        <div class="menu_categry">
-                            <div>Lorem</div>
-                        </div>
-                        <div class="food">
-                            <div>
-                                <div>Lorem ipsum</div>
-                                <div></div>
-                                <div>10€</div>
-                            </div>
-                            <div>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium,
-                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. </p>
-                            </div>
-                        </div>
-                        <div class="food">
-                            <div>
-                                <div>Lorem ipsum</div>
-                                <div></div>
-                                <div>10€</div>
-                            </div>
-                            <div>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium,
-                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                </div>
-    
-    
-            </div>
+        <div class="menuH2">
+            <h2>Menu</h2>
         </div>
+        <div class="btn-box category_box">
+            <button id="btn1" onclick="openCourse()">Courses</button>
+            <button id="btn2" onclick="openPizza()">Pizza</button>
+            <button id="btn3" onclick="openDrinks()">Drinks</button>
+            <button id="btn4" onclick="openDessert()">Dessert</button>
+        </div>
+
+
+        <div class="position">
+
+            <div id="content1" class="content">
+
+                
+
+                    <div class="box_food_left">
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Antipasta
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">ANTIPASTI L’ANGOLINO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">24€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Small Italian dishes to share </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">MELANZANE AL FORNO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">15€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Eggplants stuffed with tomatoes and buffalo mozzarella </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">BRUSCHETTA’S SFIZIOSE </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">16€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Mixture of 3 different types of Bruschetta. </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">SCHIACIATA ALL”ORIGANO </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">10€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Pizza bread with oregano and sea salt.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">CAPRESE BURATTA </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">16€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Cherry tomatoes with creamy buffalo mozzarella.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Insalata
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">INSALATA AL PROFUMO DI MARE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">22€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Salad with shrimp, scallops, and octopus </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">INSALATA AL POLLO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">18€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Caesar Salad with an Italian twis.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Pesce
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">GAMBERONI AL FORNO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">25€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Grilled prawns from the oven. </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">TONNO SCOTTATO AI FERRI</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">26€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Grilled tuna steak.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">FILETTO DI BRANZINO ALLA MUGNAIA</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">24€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Sea bass fillet with a refreshing lemon sauce.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">GAMBERI BLACK TIGER AL FORNO CON SALSA SCAMPI PICANTE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">31€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Grilled jumbo prawns from the oven with a lightly spicy scampi sauce.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="box_food_right">
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Pasta & Risotto
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">TAGLIATELLE ALLA BOLOGNESE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">19€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Tagliatelle from Emilia-Romagna with a homemade Bolognese sauce.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">PENNETTE ALL’ ARRABIATA</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">17€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Penne with a spicy sauce made from garlic, tomatoes, and dried chili peppers cooked in
+                                        olive
+                                        oil, originating from the Lazio region. </p>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">SPAGHETTI ALLA CARBONARA </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">20€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Spaghetti with a sauce based on bacon, cheese, and egg from Lazio.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">LINGUINE ALLE VONGOLÉ </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">24€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Linguine with Venus clams, originating from the South of Italy.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">PARMIGIANA DI MELANZANE </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">19€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Vegetarian lasagna based on a millefeuille of eggplants and tomatoes.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">LASAGNA AL FORNO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">20€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Casserole with a homemade sauce from Central Italy. </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">TRENETTE AL PESTO GENOVESE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">17€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Trenette from Genoa and Liguria with a homemade pesto sauce.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">RISOTTO AI FRUTTI DI MARE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">29€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Risotto with seafood from the northern regions of Italy.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">PANCIOTTI SCAMPI CON CREME DI ZUCCA E AMERETTI </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">25€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Shrimp ravioli with a creamy sauce based on pumpkin, finished with a crumble of amaretto
+                                        cookies. </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Carne
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">TAGLIATA DI MANZO SU LETTO DI RUCOLA E GRANA A SCAGLIE </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">26€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Finely sliced beef on a bed of arugula, Parmesan cheese, and balsamic.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">COTOLETTA ALLA MILANSESE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">10€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                        laudantium,
+                                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">OSSOBUCO A L'ITALIANNA</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">23€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Veal shank with tomato sauce and vegetables.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">SALTIMBOCCA ALLA ROMANA</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">22€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Thin slices of veal, covered with ham and sage in white wine sauce . </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                
+            </div>
+
+            <div id="content2" class="content">
+
+                
+
+                    <div class="box_food_left">
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Antipasta
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">ANTIPASTI L’ANGOLINO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">24€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Small Italian dishes to share </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">MELANZANE AL FORNO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">15€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Eggplants stuffed with tomatoes and buffalo mozzarella </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">BRUSCHETTA’S SFIZIOSE </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">16€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Mixture of 3 different types of Bruschetta. </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">SCHIACIATA ALL”ORIGANO </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">10€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Pizza bread with oregano and sea salt.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">CAPRESE BURATTA </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">16€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Cherry tomatoes with creamy buffalo mozzarella.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Insalata
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">INSALATA AL PROFUMO DI MARE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">22€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Salad with shrimp, scallops, and octopus </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">INSALATA AL POLLO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">18€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Caesar Salad with an Italian twis.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Pesce
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">GAMBERONI AL FORNO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">25€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Grilled prawns from the oven. </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">TONNO SCOTTATO AI FERRI</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">26€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Grilled tuna steak.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">FILETTO DI BRANZINO ALLA MUGNAIA</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">24€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Sea bass fillet with a refreshing lemon sauce.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">GAMBERI BLACK TIGER AL FORNO CON SALSA SCAMPI PICANTE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">31€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Grilled jumbo prawns from the oven with a lightly spicy scampi sauce.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="box_food_right">
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Pasta & Risotto
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">TAGLIATELLE ALLA BOLOGNESE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">19€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Tagliatelle from Emilia-Romagna with a homemade Bolognese sauce.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">PENNETTE ALL’ ARRABIATA</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">17€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Penne with a spicy sauce made from garlic, tomatoes, and dried chili peppers cooked in
+                                        olive
+                                        oil, originating from the Lazio region. </p>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">SPAGHETTI ALLA CARBONARA </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">20€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Spaghetti with a sauce based on bacon, cheese, and egg from Lazio.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">LINGUINE ALLE VONGOLÉ </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">24€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Linguine with Venus clams, originating from the South of Italy.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">PARMIGIANA DI MELANZANE </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">19€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Vegetarian lasagna based on a millefeuille of eggplants and tomatoes.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">LASAGNA AL FORNO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">20€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Casserole with a homemade sauce from Central Italy. </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">TRENETTE AL PESTO GENOVESE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">17€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Trenette from Genoa and Liguria with a homemade pesto sauce.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">RISOTTO AI FRUTTI DI MARE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">29€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Risotto with seafood from the northern regions of Italy.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">PANCIOTTI SCAMPI CON CREME DI ZUCCA E AMERETTI </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">25€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Shrimp ravioli with a creamy sauce based on pumpkin, finished with a crumble of amaretto
+                                        cookies. </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Carne
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">TAGLIATA DI MANZO SU LETTO DI RUCOLA E GRANA A SCAGLIE </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">26€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Finely sliced beef on a bed of arugula, Parmesan cheese, and balsamic.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">COTOLETTA ALLA MILANSESE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">10€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                        laudantium,
+                                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">OSSOBUCO A L'ITALIANNA</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">23€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Veal shank with tomato sauce and vegetables.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">SALTIMBOCCA ALLA ROMANA</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">22€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Thin slices of veal, covered with ham and sage in white wine sauce . </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+            
+            </div>
+
+            <div id="content3" class="content">
+
+                
+
+                    <div class="box_food_left">
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Antipasta
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">ANTIPASTI L’ANGOLINO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">24€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Small Italian dishes to share </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">MELANZANE AL FORNO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">15€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Eggplants stuffed with tomatoes and buffalo mozzarella </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">BRUSCHETTA’S SFIZIOSE </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">16€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Mixture of 3 different types of Bruschetta. </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">SCHIACIATA ALL”ORIGANO </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">10€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Pizza bread with oregano and sea salt.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">CAPRESE BURATTA </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">16€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Cherry tomatoes with creamy buffalo mozzarella.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Insalata
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">INSALATA AL PROFUMO DI MARE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">22€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Salad with shrimp, scallops, and octopus </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">INSALATA AL POLLO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">18€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Caesar Salad with an Italian twis.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Pesce
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">GAMBERONI AL FORNO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">25€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Grilled prawns from the oven. </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">TONNO SCOTTATO AI FERRI</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">26€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Grilled tuna steak.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">FILETTO DI BRANZINO ALLA MUGNAIA</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">24€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Sea bass fillet with a refreshing lemon sauce.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">GAMBERI BLACK TIGER AL FORNO CON SALSA SCAMPI PICANTE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">31€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Grilled jumbo prawns from the oven with a lightly spicy scampi sauce.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="box_food_right">
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Pasta & Risotto
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">TAGLIATELLE ALLA BOLOGNESE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">19€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Tagliatelle from Emilia-Romagna with a homemade Bolognese sauce.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">PENNETTE ALL’ ARRABIATA</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">17€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Penne with a spicy sauce made from garlic, tomatoes, and dried chili peppers cooked in
+                                        olive
+                                        oil, originating from the Lazio region. </p>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">SPAGHETTI ALLA CARBONARA </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">20€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Spaghetti with a sauce based on bacon, cheese, and egg from Lazio.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">LINGUINE ALLE VONGOLÉ </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">24€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Linguine with Venus clams, originating from the South of Italy.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">PARMIGIANA DI MELANZANE </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">19€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Vegetarian lasagna based on a millefeuille of eggplants and tomatoes.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">LASAGNA AL FORNO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">20€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Casserole with a homemade sauce from Central Italy. </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">TRENETTE AL PESTO GENOVESE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">17€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Trenette from Genoa and Liguria with a homemade pesto sauce.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">RISOTTO AI FRUTTI DI MARE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">29€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Risotto with seafood from the northern regions of Italy.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">PANCIOTTI SCAMPI CON CREME DI ZUCCA E AMERETTI </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">25€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Shrimp ravioli with a creamy sauce based on pumpkin, finished with a crumble of amaretto
+                                        cookies. </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Carne
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">TAGLIATA DI MANZO SU LETTO DI RUCOLA E GRANA A SCAGLIE </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">26€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Finely sliced beef on a bed of arugula, Parmesan cheese, and balsamic.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">COTOLETTA ALLA MILANSESE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">10€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                        laudantium,
+                                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">OSSOBUCO A L'ITALIANNA</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">23€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Veal shank with tomato sauce and vegetables.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">SALTIMBOCCA ALLA ROMANA</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">22€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Thin slices of veal, covered with ham and sage in white wine sauce . </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                
+            </div>
+
+
+            <div id="content4" class="content">
+
+                
+
+                    <div class="box_food_left">
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Antipasta
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">ANTIPASTI L’ANGOLINO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">24€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Small Italian dishes to share </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">MELANZANE AL FORNO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">15€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Eggplants stuffed with tomatoes and buffalo mozzarella </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">BRUSCHETTA’S SFIZIOSE </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">16€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Mixture of 3 different types of Bruschetta. </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">SCHIACIATA ALL”ORIGANO </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">10€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Pizza bread with oregano and sea salt.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">CAPRESE BURATTA </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">16€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Cherry tomatoes with creamy buffalo mozzarella.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Insalata
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">INSALATA AL PROFUMO DI MARE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">22€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Salad with shrimp, scallops, and octopus </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">INSALATA AL POLLO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">18€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Caesar Salad with an Italian twis.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Pesce
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">GAMBERONI AL FORNO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">25€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Grilled prawns from the oven. </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">TONNO SCOTTATO AI FERRI</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">26€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Grilled tuna steak.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">FILETTO DI BRANZINO ALLA MUGNAIA</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">24€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Sea bass fillet with a refreshing lemon sauce.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">GAMBERI BLACK TIGER AL FORNO CON SALSA SCAMPI PICANTE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">31€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Grilled jumbo prawns from the oven with a lightly spicy scampi sauce.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="box_food_right">
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Pasta & Risotto
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">TAGLIATELLE ALLA BOLOGNESE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">19€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Tagliatelle from Emilia-Romagna with a homemade Bolognese sauce.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">PENNETTE ALL’ ARRABIATA</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">17€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Penne with a spicy sauce made from garlic, tomatoes, and dried chili peppers cooked in
+                                        olive
+                                        oil, originating from the Lazio region. </p>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">SPAGHETTI ALLA CARBONARA </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">20€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Spaghetti with a sauce based on bacon, cheese, and egg from Lazio.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">LINGUINE ALLE VONGOLÉ </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">24€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Linguine with Venus clams, originating from the South of Italy.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">PARMIGIANA DI MELANZANE </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">19€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Vegetarian lasagna based on a millefeuille of eggplants and tomatoes.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">LASAGNA AL FORNO</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">20€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Casserole with a homemade sauce from Central Italy. </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">TRENETTE AL PESTO GENOVESE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">17€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Trenette from Genoa and Liguria with a homemade pesto sauce.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">RISOTTO AI FRUTTI DI MARE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">29€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Risotto with seafood from the northern regions of Italy.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">PANCIOTTI SCAMPI CON CREME DI ZUCCA E AMERETTI </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">25€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Shrimp ravioli with a creamy sauce based on pumpkin, finished with a crumble of amaretto
+                                        cookies. </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="box_info">
+                            <div class="menu_categry">
+                                <div class="menu_category_text">
+                                    <h2>Carne
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">TAGLIATA DI MANZO SU LETTO DI RUCOLA E GRANA A SCAGLIE </div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">26€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Finely sliced beef on a bed of arugula, Parmesan cheese, and balsamic.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">COTOLETTA ALLA MILANSESE</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">10€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                        laudantium,
+                                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. </p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">OSSOBUCO A L'ITALIANNA</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">23€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Veal shank with tomato sauce and vegetables.</p>
+                                </div>
+                            </div>
+
+                            <div class="food">
+                                <div class="food_box_top">
+                                    <div class="food_name">SALTIMBOCCA ALLA ROMANA</div>
+                                    <div class="food_border_bottom"></div>
+                                    <div class="food_price">22€</div>
+                                </div>
+                                <div class="food_box_bottom">
+                                    <p>Thin slices of veal, covered with ham and sage in white wine sauce . </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
     
-    </main>
+
+</main>
+
+<script src="js_rafal/food_menu.js"></script> 
 
 
 
