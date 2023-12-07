@@ -12,6 +12,6 @@ const navObserver = new IntersectionObserver((entries) => {
 
 navObserver.observe(scrollWatcher)
 
-
+ 
 
 
