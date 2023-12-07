@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Open+Sans:wght@300&family=Work+Sans&display=swap');
+
+
+
+*{
+    margin: 0;
+}
+
+
+h1, h2{
+    font-family: 'Josefin Slab', serif;
+    
+}
+
+.about{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    padding: 60px 120px;
+}
+
+.text{
+    width: 35%;
+    padding-right: 40px;
+    text-align: justify;
+}
+
+.text h1{
+    color:  #A2D5C6;
+    padding-bottom: 60px;
+    font-size: 70px;
+}
+
+.text p{
+    padding-bottom: 20px;
+    font-family:'Work Sans', sans-serif;
+}
+
+.pict{
+    display: flex;
+    flex-direction: column;
+}
+
+.work{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    border-radius: 15px 0 0 15px;
+} 
+
+.rl{
+    position: absolute;
+    bottom: 0;
+    left: 650px;
+}
+
+.rl p{
+    position: relative;
+    left: -50px;
+    bottom: 90%;
+    font-family: 'Josefin Slab', serif;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.rl img{
+    border-radius: 15px;
+
+}
+
+span{
+    color:  #A2D5C6;  
+}
+
+.description{
+    background-image: url("../imagesleyla/cocktail.png");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.description h2{
+    color: white;
+    font-size: 40px;
+    text-align: right;
+    padding: 0 80px;
+
+ }
