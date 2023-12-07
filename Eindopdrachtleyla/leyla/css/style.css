@@ -234,8 +234,98 @@ footer{
    justify-content: center;
 }
 
-
 footer p{
    align-items: center;
 }
 
+
+/* reservations */
+
+.reservations {
+   background-image: url('../imagesleyla/terras-eccellenza.png');
+   height: 900px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+
+.reservation-content{
+   display: flex;
+   flex-direction: column;
+}
+
+
+.reservations h1{
+   font-size: 70px;
+   color: white;
+   padding-bottom: 80px;
+   
+}
+
+.reservations p{
+   font-size: 40px;
+   color: white;
+   padding-bottom: 50px;
+   font-family: 'Work Sans', sans-serif;
+
+}
+
+
+
+ /* bttn */
+
+.reservationBtn{
+ display: flex;
+ justify-content: space-around;
+
+}
+
+
+ .btn {
+
+   width: 350px;
+   height: 90px;
+   background-color: #A2D5C6;
+
+   border-bottom: 3px solid #FFF;
+   border-right: 1px solid #FFF;
+   border-top: none;
+   border-left: none;
+   border-radius: 15px;
+
+   color: #252525;
+   font-family: 'Work Sans', sans-serif;
+   font-size: 2rem;
+   
+
+}
+
+.btn:hover {
+
+   background: #FFF;
+   color: #A2D5C6;
+   border-top: 3px solid #A2D5C6;
+   border-left: 1px solid #A2D5C6;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+.btn:active {
+
+   background: #A2D5C6;
+   color: #FFF;
+   /* border-top: 3px solid #FFF; */
+   border-left: 1px solid #FFF; 
+   border-bottom: 3px solid #FFF;
+   border-right: 1px solid #FFF;
+
+   transition: 0.5s;
+   cursor: pointer;
+
+
+}
