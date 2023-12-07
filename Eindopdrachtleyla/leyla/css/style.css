@@ -172,3 +172,57 @@ span{
     display: flex;
     flex-direction: row;
  }
+
+/* gallery */
+
+.gallery{
+   display: flex;
+   flex-direction: column;
+   padding: 80px 50px;
+   
+
+}
+
+.gallery h1{
+   font-size: 70px;
+   color: #A2D5C6;
+   
+   padding-bottom: 50px;
+   padding-left: 100px;
+}
+
+.gallery-content{
+  margin: auto;
+
+}
+
+.column-1{
+   display: flex;
+   flex-direction: row;
+   padding: 15px;
+}
+
+.column-2 {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   padding-left: 25px;
+
+}
+.row-1{
+   padding-right: 15px;
+}
+
+.rowcolumn-1{
+   padding-bottom: 15px;
+}
+.rowcolumn-2{
+   padding-left: 10px;
+}
+
+.columnrow img{
+   padding-right: 30px;
+}
+
+
+
