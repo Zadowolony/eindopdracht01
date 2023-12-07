@@ -2,23 +2,42 @@
 font-family: 'Josefin Slab', serif;
 font-family: 'Work Sans', sans-serif; */
 
-header {
+.primary-header {
+
+    /* Dit is voor later gemakkelijker je linkt dit naar de classes en je kan op 1 plaats de kleur veranderen */
+
+    --_bg: #D9DFDC75;
+    --_logo-color: #FFF;
+    --_nav-link-color: #FFF;
+
+    background: var(--_bg);
 
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 60px;
 
-    background-color: #D9DFDC75; 
+    /* background-color: #D9DFDC75;  */
 
     /* Had probleem met transparent : dit zorgde dat het werkt */
-    position: fixed;
+    position: sticky;
     top:0;
-    width: 100%;
 
+    transition: background-color 500ms;
+    
 
-    z-index: 999;
+    z-index: 999;  
 }
+
+.primary-header.sticking {
+    --_bg: #E3E8E5;
+    --_logo-color: #212427;
+    --_nav-link-color: #212427;
+    /* --_logo-color: hsl(0, 100%, 50%);
+    --_nav-link-color: hsl(0,82%, 64%); */
+
+}
+
 
 nav ul li {
 
@@ -33,10 +52,19 @@ nav ul li a {
     padding: 0px 15px;
 
     font-size: 1.125rem;
+    color: var(--_nav-link-color);
 }
 
-.h2logo {
+nav ul li a:hover{
 
+    color: #A2D5C6;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+.logo {
+    
+    color: var(--_logo-color);
     font-family: 'Italiana', sans-serif;
     font-size: 2.8rem;
 
