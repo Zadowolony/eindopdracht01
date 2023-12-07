@@ -91,3 +91,84 @@ span{
     padding: 0 80px;
 
  }
+
+
+ /* contactpagina */
+
+ .contact{
+    display: flex;
+    flex-direction: row;
+    margin: 100px 50px;
+ }
+
+ .contact h1{
+    color:  #A2D5C6;  
+    font-size: 80px;
+ }
+
+
+ .location{
+    padding: 0 20px;
+    
+ }
+
+ iframe{
+    height: 600px;
+    width: 600px;
+ }
+
+
+ .location-description{
+    padding: 0 50px;
+ }
+
+ .location-content{
+    padding-top: 20px;
+ }
+
+ .location-content p{
+    font-size: 15px;
+    padding: 10px;
+    font-family: 'Work Sans', sans-serif;
+    
+ }
+
+
+ .contact-info{
+    padding-top: 60px;
+ }
+
+ .contact-info h2{
+    font-size: 40px;
+    color: #A2D5C6;
+ }
+
+ .icons{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+ }
+
+ .icons i{
+    color: #A2D5C6; 
+    font-size: 25px;
+    padding: 10px;
+ }
+
+ .icon-text{
+    padding: 10px;
+    padding-top: 12px;
+    font-size: 15px;
+    font-family: 'Work Sans', sans-serif;
+    
+ }
+
+ .icon-left{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .icon{
+    display: flex;
+    flex-direction: row;
+ }
