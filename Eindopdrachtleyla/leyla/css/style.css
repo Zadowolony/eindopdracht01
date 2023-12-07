@@ -224,5 +224,18 @@ span{
    padding-right: 30px;
 }
 
+/* footer */ 
 
+footer{
+   height: 100px;
+   background-color: #E3E8E5;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+footer p{
+   align-items: center;
+}
 
