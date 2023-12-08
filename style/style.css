@@ -151,7 +151,7 @@ tr td{
     color:  #A2D5C6;
     /* padding-left: 150px; */
     padding-top: 50px;
-    padding: 50px 0 50px 150px;
+    padding: 50px 0 50px 0px;
     font-size: 70px;
     text-align: left;
 }
@@ -198,6 +198,10 @@ tr td{
 
 /* afkorting Rafal Leyla voor de image */
 
+.rl{
+   position: absolute;
+   right: 200px;
+}
 
 .rl p{
     display: flex;
@@ -219,13 +223,16 @@ span{
     color:  #A2D5C6;  
 }
 
+
+/*description */
+
 .description{
     background-image: url("../images/cocktail.png");
     /* background-size:fixed; */
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -236,21 +243,21 @@ span{
 
 .description-container {
 
-   width: 1200px;
+
    display: flex;
    justify-content: flex-end;
-   margin: auto;
+  /* margin: auto; */
 }
 
 .description h2{
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     text-align: right;
-    padding: 0 80px;
-    width: 40%;
+    padding: 0 100px 150px 350px;
+    padding-left: 350px;
+    padding-right: 50px;
    
     
-
  }
 
  /* gallery */
@@ -317,9 +324,9 @@ span{
     padding: 100px 0px;
  }
 
- .contact h1{
+ .contact h2{
     color:  #A2D5C6;  
-    font-size: 80px;
+    font-size: 70px;
  }
 
 
@@ -338,20 +345,14 @@ span{
     padding: 0 50px;
  }
 
- .location-content{
-    padding-top: 20px;
- }
-
  .location-content p{
     font-size: 15px;
-    padding: 10px;
-    font-family: 'Work Sans', sans-serif;
-    
+    font-family: 'Work Sans', sans-serif;    
  }
 
 
  .contact-info{
-    padding-top: 60px;
+    padding-top: 10px;
  }
 
  .contact-info h2{
@@ -388,6 +389,9 @@ span{
     display: flex;
     flex-direction: row;
  }
+
+
+/* reservation */
 
  .reservations {
     background-image: url('../images/terras-eccellenza.png');
