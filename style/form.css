@@ -14,10 +14,18 @@ font-family: 'Work Sans', sans-serif; */
 }
 
 /* ------------------------------------ */
+
+.reservation-title{
+   display: flex;
+   justify-content: center;
+   padding-top: 100px;
+}
+
 .formm{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
     
    
  }
@@ -155,6 +163,7 @@ font-family: 'Work Sans', sans-serif; */
 
     font-size: 20px;
     padding-top: 30px;
+    padding-bottom: 15px;
  }
 
  
@@ -267,6 +276,7 @@ font-family: 'Work Sans', sans-serif; */
    height: 100vh;
 
    display: flex;
+   padding-bottom: 250px;
 
  }
  
