@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <section>
+
+        <form action="#" method="post">
+            <div class="form-left">
+               
+                <div>
+                    <label for="lunch-diner">Lunch/diner:</label>
+                    <select name="lunch-diner" id="lunch-diner">
+                     <option disabled selected> Make a choice </option>
+                     <option value="Lunch">Lunch</option>
+                     <option value="Diner">Diner</option>
+     
+                    </select>
+                </div>
+
+                <div>
+                    <label for="persons">Persons: </label>
+                    <select name="persons" id="persons">
+                     <option disabled selected> Make a choice </option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="1">5</option>
+                     <option value="2">6</option>
+                    </select>
+                </div>
+                
+                <div>
+                     <label for="time">Time: </label>
+                     <input type="time" id="time" name="time" min="12:00" max="20:00" required/>
+                </div>
+
+
+                <div>
+                     <label for="date">Date:</label>
+                     <input type="date" id="date" name="date" value="08-12-2023" min="01-01-2023" max="01-01-2030" />
+                </div>
+
+            
+                     <div class="table">
+                        <div class="table-box-top">
+                        <p>Choose a table:</p>
+                        </div>
+                        <div class="table-box-bottom">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                     </div>
+                
+
+          </div>
+
+            <div class="form-right">
+                <div class="fullname">
+                    <div class="firstname"> 
+                        <label for="firstname">Firstname:</label>
+                        <input type="text" id="firstname" name="firstname">
+                    </div>
+                    <div class="lastname">
+                        <label for="lastname">Lastname:</label>
+                        <input type="text" id="lastname" name="lastname">
+                    </div>
+                </div>
+                <div class="form-email"> 
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <div class="form-tel">
+                    <label for="tel">Telephone:</label>
+                    <input type="tel" id="tel" name="tel"/>
+                </div>
+
+
+                <div class="form-text">
+                    <label for="text">Something we should know?</label>
+                    <textarea id="text" for="text" name="text" rows="4" cols="50"></textarea>
+                </div>
+
+                <div class="form-newsletter">
+                    <label for="news">Sign in for us newsletter</label>
+
+                    <div> 
+                        <input type="radio" id="news" name="news" value="yes">
+                        <label for="yes">Yes</label>
+                    </div>
+
+                    <div> 
+                        <input type="radio" id="news" name="news" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" id="checkbox" name="checkbox" unchecked>
+                    <label for="check">I accept the terms and conditions. </label>
+
+                </div>
+
+                <div class="form-bttn">
+                     <input type="submit" id="send" value="Send">
+                </div>
+
+            </div>
+         </form>
+
+     
+
+    </section>
+</body>
+</html>
