@@ -174,16 +174,30 @@ tr td{
 
    position: absolute;
    right: 0;
+   z-index: -1;
 
 }
+
+/* @media only screen and (max-width: 3000px) {
+    #specialimg {
+
+      width: 1000px;
+      height: 2000px;
+    }
+ }
+
+ 
+@media only screen and (max-width: 2000px) {
+   #specialimg {
+
+     width: 500px;
+     height: 300px;
+   }
+} */
 
 
 /* afkorting Rafal Leyla voor de image */
 
-.rl{
-    
-  
-}
 
 .rl p{
     display: flex;
@@ -207,12 +221,25 @@ span{
 
 .description{
     background-image: url("../images/cocktail.png");
-    height: 500px;
+    /* background-size:fixed; */
+    height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    background-attachment: fixed;
+    width: 100%;
+   
+}
+
+.description-container {
+
+   width: 1200px;
+   display: flex;
+   justify-content: flex-end;
+   margin: auto;
 }
 
 .description h2{
@@ -220,6 +247,9 @@ span{
     font-size: 40px;
     text-align: right;
     padding: 0 80px;
+    width: 40%;
+   
+    
 
  }
 
@@ -229,16 +259,17 @@ span{
     display: flex;
     flex-direction: column;
     padding: 80px 50px;
+
     
- 
+
  }
- 
- .gallery h1{
+
+
+ .gallery h2{
     font-size: 70px;
     color: #A2D5C6;
     
-    padding-bottom: 50px;
-    padding-left: 100px;
+
  }
  
  .gallery-content{
@@ -281,8 +312,9 @@ span{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 1200px;
     margin: auto;
+    padding: 100px 0px;
  }
 
  .contact h1{
@@ -359,7 +391,7 @@ span{
 
  .reservations {
     background-image: url('../images/terras-eccellenza.png');
-    height: 900px;
+    height: 700px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -373,18 +405,19 @@ span{
  .reservation-content{
     display: flex;
     flex-direction: column;
+    width: 1200px;
  }
  
  
- .reservations h1{
+ .reservations h2{
     font-size: 70px;
     color: white;
-    padding-bottom: 80px;
+  
     
  }
  
  .reservations p{
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     padding-bottom: 50px;
     font-family: 'Work Sans', sans-serif;
