@@ -329,3 +329,73 @@ footer p{
 
 
 }
+
+
+/* form */
+
+.formm{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   height: 100vh;
+}
+
+.form-container{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   border: 1px solid black;
+   
+   gap: 40px;
+   width: 100%;
+
+   height: 600px;
+  
+
+   
+}
+
+.form-left{
+   background-color: #E3E8E5;
+   width: 50%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
