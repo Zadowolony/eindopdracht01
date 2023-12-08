@@ -123,20 +123,33 @@ tr td{
 
 
 .about{
-    position: relative;
+    
     display: flex;
-    width: 100%;
+    width: 1200px;
+    margin: auto;
     padding: 100px 0;
+}
+.main-about-container {
+
+   position: relative;
 }
 
 .text{
-    width: 40%;
+    width: 45%;
     text-align: justify;
 }
 
+.pict{
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   width: 45%;
+}
+
+
 .text h1{
     color:  #A2D5C6;
-    padding-left: 150px;
+    /* padding-left: 150px; */
     padding-top: 50px;
     padding: 50px 0 50px 150px;
     font-size: 70px;
@@ -144,15 +157,11 @@ tr td{
 }
 
 .text p{
-   padding-left: 150px;
+   padding-right: 150px;
    padding-bottom: 5px;
    font-family:'Work Sans', sans-serif;
 }
 
-.pict{
-    display: flex;
-    flex-direction: column;
-}
 
 .work{
     position: absolute;
@@ -161,22 +170,30 @@ tr td{
     border-radius: 15px 0 0 15px;    
 } 
 
+#specialimg {
+
+   position: absolute;
+   right: 0;
+
+}
+
 
 /* afkorting Rafal Leyla voor de image */
 
 .rl{
-    position: absolute;
-    bottom: 40px;
-    left: 750px;
+    
+  
 }
 
 .rl p{
-    position: relative;
-    left: -90px;
-    bottom: 40%;
+    display: flex;
+    /* align-items: end;
+    justify-content: end; */
     font-family: 'Josefin Slab', serif;
     font-style: italic;
     font-size: 40px;
+    margin: 0;
+    z-index: 999;
 }
 
 .rl img{
