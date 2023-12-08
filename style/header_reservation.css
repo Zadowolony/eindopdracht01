@@ -1,0 +1,53 @@
+/* font-family: 'Italiana', sans-serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Work Sans', sans-serif; */
+
+
+
+.primary-header {
+
+
+    background: #A2D5C6;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+
+
+
+
+nav ul li {
+
+    display: inline-block;
+   
+}
+
+nav ul li a {
+
+    color: #201C1C;
+    text-decoration: none;
+    padding: 0px 15px;
+
+    font-size: 1.125rem;
+   
+}
+
+nav ul li a:hover{
+
+    color: #A2D5C6;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+.logo {
+    
+   
+    font-family: 'Italiana', sans-serif;
+    font-size: 2.8rem;
+
+
+
+}

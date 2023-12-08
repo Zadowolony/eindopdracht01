@@ -260,7 +260,7 @@ font-family: 'Work Sans', sans-serif; */
  .main-form-container {
 
    /* Dit heb ik overgenomen vanuit Figma  */
-   background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../image_rafal/Eccellenza\ Bar.jpg), lightgray 50% / cover no-repeat;
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/Eccellenza\ Bar.jpg), lightgray 50% / cover no-repeat;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover; 
