@@ -1,6 +1,7 @@
 "use strict";
 let firstnameTxt;
-let allesCorrectIngevuld = false;
+let allesCorrectIngevuld = false
+;
 let lastnameTxt;
 let emailTxt;
 let telTxt;
@@ -71,7 +72,7 @@ function controleerEmail() {
 
 function controleerVoorwaardenEmail() {
     if(!controleerEmail()) {
-        document.getElementById("email_error").innerHTML = "Ongeldig e-mailadres!";
+        document.getElementById("email_error").innerHTML = "Invalid email!";
         allesCorrectIngevuld = false;
     }
     else {
@@ -118,7 +119,7 @@ function verstuur() {
 
 
     if(firstnameTxt.length==0){
-document.getElementById("firstname_error").innerHTML="Vul in a.u.b.";
+document.getElementById("firstname_error").innerHTML="Fill in.";
 	allesCorrectIngevuld = false;
 }
 else{
@@ -127,7 +128,7 @@ else{
 
 
 if(lastnameTxt.length==0){
-    document.getElementById("lastname_error").innerHTML="Vul in a.u.b.";
+    document.getElementById("lastname_error").innerHTML="Fill in.";
         allesCorrectIngevuld = false;
     }
     else{
@@ -135,7 +136,7 @@ if(lastnameTxt.length==0){
     }
 
 if(emailTxt.length == 0) {
-    document.getElementById("email_error").innerHTML = " Vul a.u.b. uw e-mailadres in.";
+    document.getElementById("email_error").innerHTML = "Fill in.";
     allesCorrectIngevuld = false;
   }
   else{
@@ -143,7 +144,7 @@ if(emailTxt.length == 0) {
   }
 
   if(telTxt.length == 0) {
-    document.getElementById("tel_error").innerHTML = " Vul a.u.b. uw tel in.";
+    document.getElementById("tel_error").innerHTML = " Fill in.";
     allesCorrectIngevuld = false;
   }
   else{
@@ -152,7 +153,7 @@ if(emailTxt.length == 0) {
 
 
     if (geselecteerdeLunchDiner == 0) {
-    document.getElementById("lunch-diner_error").innerHTML= " Kies een optie a.u.b.";
+    document.getElementById("lunch-diner_error").innerHTML= " Choose an option.";
     allesCorrectIngevuld = false;
     }
 
@@ -161,7 +162,7 @@ if(emailTxt.length == 0) {
     }
 
     if (geselecteerdePersons== 0) {
-        document.getElementById("persons_error").innerHTML= " Kies een optie a.u.b.";
+        document.getElementById("persons_error").innerHTML= " Choose an option.";
         allesCorrectIngevuld = false;
         }
     
@@ -202,9 +203,43 @@ if(emailTxt.length == 0) {
 
 
 
+        if(allesCorrectIngevuld){
+            document.write("Alles is correct ingevuld");
+            let link = "mailto:" + encodeURIComponent("ferhan.96@hotmail.com")
+            + "?cc=" + encodeURIComponent("ferhan.96@hotmail.com")
+            + "&subject=" + encodeURIComponent("Form validation")
+            + "&body=" 
+            + "lunch-diner:" 
+            + encodeURIComponent(lunchDinerTxt) 
+            + encodeURIComponent("\r\n\n")
+            + "persons:" 
+            + encodeURIComponent(personsTxt) 
+            + encodeURIComponent("\r\n\n") 
+            + "time:"
+            + encodeURIComponent(timeTxtTxt)
+            + encodeURIComponent("\r\n\n")
+            + "date:"
+            + encodeURIComponent(dateTxtTxt)
+            + "firstname:"
+            + encodeURIComponent(firstnameTxt)  
+            + encodeURIComponent("\r\n\n")
+            + "lastname:"
+            + encodeURIComponent(lastnameTxt)
+            + encodeURIComponent("\r\n\n")
+            + "email:"
+            + encodeURIComponent(emailTxt)
+            + "tel:"
+            + encodeURIComponent(telTxt)  
+            + encodeURIComponent("\r\n\n")
+            + "text:"
+            + encodeURIComponent(textTxt)
+            + encodeURIComponent("\r\n\n")
+            + "check:"
+            + encodeURIComponent(checkBox)
+            + encodeURIComponent("\r\n\n")
 
-    if(allesCorrectIngevuld){
-        document.write("");
+            
+
 
     }
 
