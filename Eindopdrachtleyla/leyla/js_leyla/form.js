@@ -4,7 +4,7 @@ let allesCorrectIngevuld=true;
 let lastnameTxt;
 let emailTxt;
 let telTxt;
-/*let timeTxt;*/
+let timeTxt;
 
 let geselecteerdeLunchDiner;
 let lunchDinerTxt;
@@ -12,7 +12,7 @@ let lunchDinerTxt;
 
 
 
-/*function controleerVoorwaardenTime() {
+function controleerVoorwaardenTime() {
     const inputTime = new Date(`01/01/2000 ${timeTxt}`);
     const minTime = new Date(`01/01/2000 12:00`);
     const maxTime = new Date(`01/01/2000 20:00`);
@@ -23,11 +23,11 @@ let lunchDinerTxt;
     } else {
         document.getElementById("time_error").innerHTML = "";
     }
-}*/
+}
 
 
 function controleerVoorwaardenFirstname(){
-if(voornaamTxt.length < 2 ){
+if(firstnameTxt.length < 2 ){
 document.getElementById("firstname_error").innerHTML="Minstens 2 karakters lang!";
 		allesCorrectIngevuld = false;
 	}
@@ -89,7 +89,7 @@ function verstuur() {
     telTxt = document.getElementById("tel").value;
     geselecteerdeLunchDiner = document.getElementById("lunch-diner").selectedIndex;
     lunchDinerTxt = document.getElementById("lunch-diner").value;
-   /* timeTxt = document.getElementById("time").value; */
+    timeTxt = document.getElementById("time").value; 
 
     allesCorrectIngevuld = true;
 
@@ -138,13 +138,13 @@ if(emailTxt.length == 0) {
     document.getElementById("lunch-diner_error").innerHTML="";
     }
 
-   /* if(timeTxt.length == 0){
+    if(timeTxt.length == 0){
         document.getElementById("time_error").innerHTML = "Kies";
         allesCorrectIngevuld = false;
     }
     else{
-        controleerVoorwaardenTime();
-    }*/
+        controleerVoorwaardenTime()
+    }
 
 
     if(allesCorrectIngevuld){
