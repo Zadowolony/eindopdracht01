@@ -1,27 +1,44 @@
 "use strict";
 let firstnameTxt;
-let allesCorrectIngevuld=true;
+let allesCorrectIngevuld = false;
 let lastnameTxt;
 let emailTxt;
 let telTxt;
 let timeTxt;
+let dateTxt;
 
 let geselecteerdeLunchDiner;
 let lunchDinerTxt;
-
+let geselecteerdePersons;
+let personsTxt;
+let textTxt;
+let checkBox;
 
 
 
 function controleerVoorwaardenTime() {
-    const inputTime = new Date(`01/01/2000 ${timeTxt}`);
-    const minTime = new Date(`01/01/2000 12:00`);
-    const maxTime = new Date(`01/01/2000 20:00`);
+    const inputTime = document.getElementById("time").value;
+    const minTime = "12:00";
+    const maxTime = "20:00";
 
-    if (inputTime < minTime || inputTime > maxTime || isNaN(inputTime)) {
-        document.getElementById("time_error").innerHTML = "Selecteer een tijd tussen 12:00 en 20:00.";
+    if (inputTime < minTime || inputTime > maxTime) {
+        document.getElementById("time_error").innerHTML = "Select time between 12:00 - 20:00.";
         allesCorrectIngevuld = false;
     } else {
         document.getElementById("time_error").innerHTML = "";
+    }
+}
+
+function controleerVoorwaardenDate() {
+    const inputDate = document.getElementById("date").value;
+    const minDate = "2000-01-01";
+    const maxDate = "9999-01-01";
+
+    if (inputDate < minDate || inputDate > maxDate) {
+        document.getElementById("date_error").innerHTML = "Select a valid date.";
+        allesCorrectIngevuld = false;
+    } else {
+        document.getElementById("date_error").innerHTML = "";
     }
 }
 
@@ -89,7 +106,12 @@ function verstuur() {
     telTxt = document.getElementById("tel").value;
     geselecteerdeLunchDiner = document.getElementById("lunch-diner").selectedIndex;
     lunchDinerTxt = document.getElementById("lunch-diner").value;
+    geselecteerdePersons = document.getElementById("persons").selectedIndex;
+    personsTxt = document.getElementById("persons").value;
     timeTxt = document.getElementById("time").value; 
+    dateTxt = document.getElementById("date").value; 
+    checkBox = document.getElementById("checkbox").checked;
+    textTxt = document.getElementById("text").value;
 
     allesCorrectIngevuld = true;
 
@@ -138,8 +160,18 @@ if(emailTxt.length == 0) {
     document.getElementById("lunch-diner_error").innerHTML="";
     }
 
+    if (geselecteerdePersons== 0) {
+        document.getElementById("persons_error").innerHTML= " Kies een optie a.u.b.";
+        allesCorrectIngevuld = false;
+        }
+    
+        else{
+        document.getElementById("persons_error").innerHTML="";
+        }
+
+
     if(timeTxt.length == 0){
-        document.getElementById("time_error").innerHTML = "Kies";
+        document.getElementById("time_error").innerHTML = " Select time";
         allesCorrectIngevuld = false;
     }
     else{
@@ -147,8 +179,32 @@ if(emailTxt.length == 0) {
     }
 
 
+    if(textTxt.length==0){
+        document.getElementById("text_error").innerHTML="Please provide some information.";
+            allesCorrectIngevuld = false;
+        }
+        else{
+         document.getElementById("text_error").innerHTML="";
+        }
+
+    if(checkBox == 0 ) {
+        document.getElementById("checkbox_error").innerHTML = "Please accept!";
+        allesCorrectIngevuld= false;
+    }
+
+    if(dateTxt.length == 0){
+        document.getElementById("date_error").innerHTML = " Select a date.";
+        allesCorrectIngevuld = false;
+    }
+    else{
+        controleerVoorwaardenDate()
+    }
+
+
+
+
     if(allesCorrectIngevuld){
-        document.write("Alles is correct ingevuld");
+        document.write("");
 
     }
 

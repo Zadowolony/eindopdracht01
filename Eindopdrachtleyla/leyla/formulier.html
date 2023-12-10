@@ -79,6 +79,7 @@
                      <option value="1">5</option>
                      <option value="2">6</option>
                     </select>
+                    <span class="error" id="persons_error"></span>
                 </div>
                 
                 <div class="form-box1">
@@ -90,7 +91,8 @@
 
                 <div class="form-box1">
                      <label for="date">Date:</label>
-                     <input type="date" id="date" name="date" value="08-12-2023" min="01-01-2023" max="01-01-2030" />
+                     <input type="date" id="date" name="date" value="date" min="01-01-2000" max="01-01-9999" />
+                     <span class="error" id="date_error"></span>
                 </div>
 
             
@@ -122,7 +124,7 @@
                     <div class="form-box1 firstname"> 
                         <label for="firstname">Firstname:</label>
                         <input type="text" id="firstname" name="firstname">
-                        <span class="error" id="firstname_error"></span>
+                        <label ><span class="error" id="firstname_error"></span> </label>
                     </div>
                     <div class="form-box1 lastname">
                         <label for="lastname">Lastname:</label>
@@ -146,6 +148,7 @@
                 <div class="form-box1 form-text">
                     <label for="text">Something we should know?</label>
                     <textarea id="text" for="text" name="text" rows="4" cols="50"></textarea>
+                    <span class="error" id="text_error"></span>
                 </div>
 
                 <div class="form-box1 form-newsletter">
@@ -167,6 +170,7 @@
                     <div><label for="check">I accept the terms and conditions.  
                     </label></div>
                     <div><input type="checkbox" id="checkbox" name="checkbox" unchecked></div>
+                    <span class="error" id="checkbox_error"></span>
 
                 </div>
 
