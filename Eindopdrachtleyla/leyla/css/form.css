@@ -1,0 +1,327 @@
+/* form */
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Josefin+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+
+/* font-family: 'Italiana', sans-serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Work Sans', sans-serif; */
+
+/* even bij nemen niet overnemen */
+
+*{
+
+   margin: 0;
+}
+
+/* ------------------------------------ */
+
+.reservation-title{
+   display: flex;
+   justify-content: center;
+   padding-top: 100px;
+}
+
+.formm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    
+   
+ }
+ 
+ .form-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    gap: 40px;
+    width: 100%;
+    height: 600px;
+   
+ }
+ 
+ .form-left{
+    background-color: #E3E8E5;
+    width: 50%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column;
+    /*justify-content: center;  */
+    border-radius: 15px;
+    padding-top: 20px;
+    
+   
+ 
+ }
+
+ .form-right {
+    background-color: #E3E8E5;
+    width: 50%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    border-radius: 15px;
+    padding-top: 20px;
+    
+    
+
+
+ }
+
+ .form-box1 {
+
+    
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding : 5px 15px;
+
+    width: 90%;
+ }
+
+ label {
+
+  
+   
+    width: 30%;
+    text-align: left;
+   
+
+ }
+
+ input {
+
+    width: 70%;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+ }
+
+ select {
+
+    width: 70%;
+    height: 35px;
+    border:none;
+    border-radius: 15px;
+    padding-right:30px;
+    padding-left: 30px;
+ }
+
+ option {
+
+    text-align: center;
+ }
+
+ #time {
+    width:70%;
+  
+   
+    text-align: center;
+ 
+ }
+
+ #date {
+    width: 70%;
+    text-align: center;
+    
+
+ }
+
+ .table {
+
+    display: flex;
+    flex-direction: column;
+
+ }
+
+ .table-box-bottom {
+
+    
+    width: 500px;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+ }
+
+.table-box-bottom div {
+
+    height: 20%;
+    width: 20%;
+    border-radius: 30px;
+    background: #FFF;
+    padding: 0px 15px;
+ }
+
+ .table-box-top p {
+
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+ }
+
+ 
+ .box {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ .box:hover {
+
+    background: #A2D5C6;
+    transition: 0.3;
+    cursor: pointer;
+ }
+
+ form{
+
+    font-family: 'Work Sans', sans-serif;
+ }
+
+ .form-text {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+ }
+
+ .form-text label {
+
+    width: 100%;
+    text-align: left;
+ }
+
+ textarea {
+
+    border: none;
+    border-radius: 15px;
+ }
+ 
+ .yesno {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ }
+
+ .form-check label {
+
+    width: 60%;
+ }
+
+ .form-check input {
+
+  
+    width: 40px;
+    height: 40px;
+    
+    width: 100%;
+   
+
+    display: flex;
+    align-self: flex-end;
+ }
+
+ #checkbox {
+
+    border-radius: 30px;
+ }
+
+ 
+.form-bttn {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+ #send {
+    width: 190px;
+    height: 45px;
+    background-color: #A2D5C6;
+
+    border-bottom: 3px solid #FFF;
+    border-right: 1px solid #FFF;
+    border-top: none;
+    border-left: none;
+    border-radius: 15px;
+
+    color: #FFF;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.125rem;
+
+ }
+
+
+ /* Verder pagina */
+
+ .main-form-container {
+
+   /* Dit heb ik overgenomen vanuit Figma  */
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/Eccellenza\ Bar.jpg), lightgray 50% / cover no-repeat;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover; 
+   height: 100vh;
+
+   display: flex;
+   padding-bottom: 250px;
+
+ }
+ 
+ 
+ footer{
+   height: 100px;
+   background-color: #E3E8E5;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+footer p{
+   align-items: center;
+}
+
+
+.reservation-title {
+
+   color: #FFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Josefin Slab;
+font-size: 70px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding-bottom: 50px;
+
+
+}
+
+.main-form-inside-container {
+
+   width: 1200px;
+   margin: auto;
+}
+
+.error{
+   color: red;
+   font-size: small;
+}
+
+
+
+
+ 
+ 
