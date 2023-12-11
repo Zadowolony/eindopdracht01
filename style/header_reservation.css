@@ -42,11 +42,12 @@ nav ul li a:hover{
     transition: 0.3s;
 }
 
-.logo {
+.logo a {
     
    
     font-family: 'Italiana', sans-serif;
     font-size: 2.8rem;
+    color: black !important;
 
 
 

@@ -436,4 +436,12 @@ width:200px;
 
 
  
- 
+ /* BOUWPLAN */
+
+ .bouwplan {
+
+   background: #E3E8E5;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }

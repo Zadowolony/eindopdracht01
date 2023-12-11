@@ -66,7 +66,16 @@ function  controleerVoorwaardenDate(){
         document.getElementById("date_error").innerHTML ="Invalid date";
         allesCorrectIngevuld = false;
     }else {
-        document.getElementById("date_error").innerHTML= "";
+        let ingevoerdeDatum = new Date(dateTxt);
+        let huidigeDatum = new Date();
+
+        // Vergelijk de ingevoerde datum met de huidige datum
+        if (ingevoerdeDatum < huidigeDatum) {
+            document.getElementById("date_error").innerHTML = "Choose a future date.";
+            allesCorrectIngevuld = false;
+        } else {
+            document.getElementById("date_error").innerHTML = "";
+        }
     }
     
 }
