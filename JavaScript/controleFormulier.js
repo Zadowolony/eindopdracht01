@@ -261,8 +261,46 @@ function verstuur() {
 
 
 
-    if(allesCorrectIngevuld){
-        document.write("Naam is correct ingevuld");
+
+
+        if(allesCorrectIngevuld){
+            document.write("Alles is correct ingevuld");
+            let link = "mailto:" + encodeURIComponent("ferhan.96@hotmail.com")
+            + "?cc=" + encodeURIComponent("ferhan.96@hotmail.com")
+            + "&subject=" + encodeURIComponent("Form validation")
+            + "&body=" 
+            + "lunch-diner:" 
+            + encodeURIComponent(lunchDinerTxt) 
+            + encodeURIComponent("\r\n\n")
+            + "persons:" 
+            + encodeURIComponent(selectedPersonsTxt) 
+            + encodeURIComponent("\r\n\n") 
+            + "time:"
+            + encodeURIComponent(timeTxt)
+            + encodeURIComponent("\r\n\n")
+            + "date:"
+            + encodeURIComponent(dateTxt)
+            + "firstname:"
+            + encodeURIComponent(firstNameTxt)  
+            + encodeURIComponent("\r\n\n")
+            + "lastname:"
+            + encodeURIComponent(lastNameTxt)
+            + encodeURIComponent("\r\n\n")
+            + "email:"
+            + encodeURIComponent(emailTxt)
+            + "tel:"
+            + encodeURIComponent(telTxt)  
+            + encodeURIComponent("\r\n\n")
+            + "check:"
+            + encodeURIComponent(checkTxt)
+            + encodeURIComponent("\r\n\n")
+
+            
+
+
+    
+
+}
     }
 
 
