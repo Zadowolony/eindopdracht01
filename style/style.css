@@ -506,8 +506,110 @@ footer{
  footer p{
     align-items: center;
  }
+
+
+
+ /* Mailchimp newsletter */
  
+ #mc_embed_signup
+ {
+   
+   background:#fff; 
+   font:20px;   
+   width: 600px;
+}
+
+.mailchimp-main-container {
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50vh;
+   width: 1200px;
+   margin: auto;
+
+   background: #E3E8E5;
+
+   }
+
+.mailchimp-main-container-bg {
+
+   background: #E3E8E5;
+   width: 100%;
+}
+.mailchimp-box-left, .mailchimp-box-right {
+
+   width: 45%;
+   height: 30vh;
+   display: flex;
+   align-items: center;
+   
+}
+
+.mailchimp-box-left {
+
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+
+   flex-direction: column;
+   gap: 100px;
+}
+
+.mailchimp-box-left h2 {
+  
+   font-size: 56px;
+   width: 400px;
+}
+
+.mailchimp-box-left p {
+  
+   font-size: 18px;
+   width: 400px;
+}
+
+
+.refferal_badge {
+
+   width: 50px;
+   height: 50px;
+}
+
+#mc_embed_signup {
+
+   background: #A2D5C6;
+   padding: 20px;
+   border-radius: 15px;
+}
+
+#mce-EMAIL-HELPERTEXT {
+
+   background: #A2D5C6;
+}
+
+.helper_text {
+
+   background: #252525;
+}
+
+#mce-EMAIL {
+
+   background-color: #E3E8E5;
+   border: 1px solid #E3E8E5;
+   border-radius: 15px;
+}
 
 
 
+#mc-embedded-subscribe {
 
+   background-color: #E3E8E5 !important;
+   color: #252525 !important;
+}
+
+.mc-field-group label {
+
+   text-align: left;
+   width: 100%;
+   padding: 10px 0px;
+}
