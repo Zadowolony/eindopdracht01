@@ -3,135 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/header_reservation.css">
     
-    <title>Document</title>
+    <title>Eccellenza Reservation</title>
 </head>
 <body>
 
-    <section class="formm">
-      
-    <form action="#" method="post">
-        <div class="form-container">
-        <div class="form-left">
-           
-            <div class="form-box1">
-                <label for="lunch-diner">Lunch/diner:</label>
-                <select name="lunch-diner" id="lunch-diner">
-                 <option disabled selected> Make a choice </option>
-                 <option value="Lunch">Lunch</option>
-                 <option value="Diner">Diner</option>
- 
-                </select>
-            </div>
+    <header class='primary-header'>
+        <nav class="nav-list">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html#about">About Us</a>
+                </li>
+                <li>
+                    <a href="index.html#menu">Menu</a>
+                </li>
+            </ul>
+        </nav>
 
-            <div class="form-box1">
-                <label for="persons">Persons: </label>
-                <select name="persons" id="persons">
-                 <option disabled selected> Make a choice </option>
-                 <option value="1">1</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-                 <option value="4">4</option>
-                 <option value="1">5</option>
-                 <option value="2">6</option>
-                </select>
-            </div>
-            
-            <div class="form-box1">
-                 <label for="time">Time: </label>
-                 <input type="time" id="time" name="time" min="12:00" max="20:00" required/>
-            </div>
-
-
-            <div class="form-box1">
-                 <label for="date">Date:</label>
-                 <input type="date" id="date" name="date" value="08-12-2023" min="01-01-2023" max="01-01-2030" />
-            </div>
-
-        
-                 <div class="form-box1 table">
-                    <div class="table-box-top">
-                    <p>Choose a table:</p>
-                    </div>
-                    <div class="table-box-bottom">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                 </div>
-            
-
-      </div>
-
-        <div class=" form-right">
-            <div class="fullname">
-                <div class="form-box1 firstname"> 
-                    <label for="firstname">Firstname:</label>
-                    <input type="text" id="firstname" name="firstname">
-                </div>
-                <div class="form-box1 lastname">
-                    <label for="lastname">Lastname:</label>
-                    <input type="text" id="lastname" name="lastname">
-                </div>
-            </div>
-            <div class="form-box1 form-email"> 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email">
-            </div>
-            
-            <div class="form-box1 form-tel">
-                <label for="tel">Telephone:</label>
-                <input type="tel" id="tel" name="tel"/>
-            </div>
-
-
-            <div class="form-box1 form-text">
-                <label for="text">Something we should know?</label>
-                <textarea id="text" for="text" name="text" rows="4" cols="50"></textarea>
-            </div>
-
-            <div class="form-box1 form-newsletter">
-                <label for="news">Sign in for us newsletter</label>
-
-                <div> 
-                    <input type="radio" id="news" name="news" value="yes">
-                    <label for="yes">Yes</label>
-                </div>
-
-                <div> 
-                    <input type="radio" id="news" name="news" value="no">
-                    <label for="no">No</label>
-                </div>
-            </div>
-
-            <div class="form-box1 form-check">
-                <input type="checkbox" id="checkbox" name="checkbox" unchecked>
-                <label for="check">I accept the terms and conditions. </label>
-
-            </div>
-
-            <div class="form-box1 form-bttn">
-                 <input type="submit" id="send" value="Send">
-            </div>
-
+        <div class="navLogo">
+            <span class="logo">ECCELLENZA</span>
         </div>
 
-
-        </div>
-     </form>
-
- 
-
-</section>
-
-
+        <nav class="nav-list">
+            <ul>
+                <li>
+                    <a href="index.html#gallery">Gallery</a>
+                </li>
+                <li>
+                    <a href="index.html#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="formulier.html">Reservations</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     
+
+    <div class="main-form-container">
+
+        <div class="main-form-inside-container">
+
+        <div class="reservation-title">Make A Reservation</div>
+    <section class="formm">
+      
+        <form action="#" method="GET">
+            <div class="form-container">
+            <div class="form-left">
+               
+                <div class="form-box1">
+                    <label for="lunch-diner">Lunch/diner:</label>
+                    <select id="lunch-diner">
+                     <option value=""> Make a choice </option>
+                     <option value="Lunch">Lunch</option>
+                     <option value="Diner">Diner</option>
+     
+                    </select>
+                    <span class="error" id="lunch-diner_error"></span>
+                </div>
+
+                <div class="form-box1">
+                    <label for="persons">Persons: </label>
+                    <select name="persons" id="persons">
+                     <option disabled selected> Make a choice </option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="1">5</option>
+                     <option value="2">6</option>
+                    </select>
+                    <span class="error" id="persons_error"></span>
+                </div>
+                
+                <div class="form-box1">
+                     <label for="time">Time: </label>
+                     <input type="time" id="time" name="time" min="12:00" max="20:00"/>
+                     <span class="error" id="time_error"></span>
+                </div>
+
+
+                <div class="form-box1">
+                     <label for="date">Date:</label>
+                     <input type="date" id="date" name="date" value="date" min="01-01-2000" max="01-01-9999" />
+                     <span class="error" id="date_error"></span>
+                </div>
+
+            
+                     <div class="form-box1 table">
+                        <div class="table-box-top">
+                        <p>Choose a table:</p>
+                        </div>
+                        <div class="table-box-bottom">
+                            <div class="box">1</div>
+                            <div class="box">2</div>
+                            <div class="box">3</div>
+                            <div class="box">4</div>
+                            <div class="box">5</div>
+                            <div class="box">6</div>
+                            <div class="box">7</div>
+                            <div class="box">8</div>
+                            <div class="box">9</div>
+                            <div class="box">10</div>
+                            <div class="box">11</div>
+                            <div class="box">12</div>
+                        </div>
+                     </div>
+                
+
+          </div>
+
+            <div class=" form-right">
+                <div class="fullname">
+                    <div class="form-box1 firstname"> 
+                        <label for="firstname">Firstname:</label>
+                        <input type="text" id="firstname" name="firstname">
+                        <label ><span class="error" id="firstname_error"></span> </label>
+                    </div>
+                    <div class="form-box1 lastname">
+                        <label for="lastname">Lastname:</label>
+                        <input type="text" id="lastname" name="lastname">
+                        <span class="error" id="lastname_error"></span>
+                    </div>
+                </div>
+                <div class="form-box1 form-email"> 
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error" id="email_error"></span>
+                </div>
+                
+                <div class="form-box1 form-tel">
+                    <label for="tel">Telephone:</label>
+                    <input type="tel" id="tel" name="tel"/>
+                    <span class="error" id="tel_error"></span>
+                </div>
+
+
+                <div class="form-box1 form-text">
+                    <label for="text">Something we should know?</label>
+                    <textarea id="text" for="text" name="text" rows="4" cols="50"></textarea>
+                    <span class="error" id="text_error"></span>
+                </div>
+
+                <div class="form-box1 form-newsletter">
+                    <label for="news">Sign in for us newsletter</label>
+
+                    <div class="yesno"> 
+                        <input type="radio" id="news" name="news" value="yes">
+                        <label for="yes">Yes</label>
+                    </div>
+
+                    <div class="yesno"> 
+                        <input type="radio" id="news" name="news" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+
+                <div class="form-box1 form-check">
+         
+                    <div><label for="check">I accept the terms and conditions.  
+                    </label></div>
+                    <div><input type="checkbox" id="checkbox" name="checkbox" unchecked></div>
+                    <span class="error" id="checkbox_error"></span>
+
+                </div>
+
+                <div class="form-box1 form-bttn">
+                     <input type="submit" id="send" value="Send" onclick="verstuur()">
+                </div>
+
+            </div>
+
+
+            </div>
+         </form>
+
+     
+
+    </section>
+    </div>
+
+    </div>
+
+    <footer>
+        <p>Copyright 2023 © www.restaurant.be | all rights reserved | design by Leyla&Rafal 06/12/2023 for school projectpictures by Pexel </p>
+    </footer>
+
+    <script src="js_rafal/header.js"></script> 
+
+    <script src="js_leyla//form.js"></script>
+      
+ 
+
+
+
+
+ 
+
 </body>
 </html>
