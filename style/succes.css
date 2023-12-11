@@ -30,12 +30,29 @@
     color: green;
 }
 
+
+/*ss is afkorting succes */
 .ss{
     color: green;
     font-weight: bold;
 }
 
-  footer{
+.back{
+  font-size: large;
+  padding-top: 20px;
+}
+
+.index{
+  text-decoration: none;
+  font-style: italic;
+  color: black;
+}
+
+.index:hover{
+  color: #A2D5C6;
+}
+
+footer{
     height: 100px;
     background-color: #E3E8E5;
     display: flex;

@@ -63,7 +63,7 @@ function controleerVoorwaardenTime(){
 function  controleerVoorwaardenDate(){
 
     if(dateTxt == ""){
-        document.getElementById("date_error").innerHTML =" invalid date";
+        document.getElementById("date_error").innerHTML ="Invalid date";
         allesCorrectIngevuld = false;
     }else {
         document.getElementById("date_error").innerHTML= "";
@@ -84,7 +84,7 @@ function controleerVoorwaardenTable() {
     }
 
     if (!checked) {
-        tableError.innerHTML = "Kies een tafeloptie.";
+        tableError.innerHTML = "Choose an option.";
         return false; // Geen tafeloptie geselecteerd
     } else {
         tableError.innerHTML = "";
@@ -199,7 +199,7 @@ function verstuur() {
     allesCorrectIngevuld = true;
 
     if(selectedLunchDinerTxt == 0){
-        document.getElementById("lunch_diner_error").innerHTML="Choose";
+        document.getElementById("lunch_diner_error").innerHTML="Select";
         allesCorrectIngevuld= false;
 
     }else {
@@ -209,7 +209,7 @@ function verstuur() {
     }
 
     if(selectedPersonsTxt == 0){
-        document.getElementById("persons_error").innerHTML="How many persons?";
+        document.getElementById("persons_error").innerHTML="Select";
         allesCorrectIngevuld = false;
     }else {
         // personsTxt = document.getElementById("persons").value;
@@ -219,21 +219,21 @@ function verstuur() {
     }
 
     if(timeTxt == 0){
-        document.getElementById("time_error").innerHTML="Choose your time";
+        document.getElementById("time_error").innerHTML="Choose time.";
         allesCorrectIngevuld = false;
     }else {
         controleerVoorwaardenTime();
     }
 
     if(dateTxt == 0){
-        document.getElementById("date_error").innerHTML="Choose your date";
+        document.getElementById("date_error").innerHTML="Choose date.";
         allesCorrectIngevuld = false;
     }else {
         controleerVoorwaardenDate();
     }
 
     if(tableTxt == 0){
-        document.getElementById("table_error").innerHTML = "Kies een tafeloptie.";
+        document.getElementById("table_error").innerHTML = "Choose a table.";
         allesCorrectIngevuld = false;
     } else {
         
@@ -244,7 +244,7 @@ function verstuur() {
 
     if(firstNameTxt.length==0 || lastNameTxt.lenght==0){
         document.getElementById("firstname_error").innerHTML="Your Name";
-        document.getElementById("lastname_error").innerHTML="Your last Name";
+        document.getElementById("lastname_error").innerHTML="Your lastname";
        
         allesCorrectIngevuld = false;
 
@@ -285,8 +285,8 @@ function verstuur() {
 
 
             document.write("")
-            let link = "mailto:" + encodeURIComponent("rafal.zado92@hotmail.com")
-            + "?cc=" + encodeURIComponent("rafal.zado92@hotmail.com")
+            let link = "mailto:" + encodeURIComponent("ferhan.96@hotmail.com")
+            + "?cc=" + encodeURIComponent("ferhan.96@hotmail.com")
             + "&subject=" + encodeURIComponent("Form validation")
             + "&body=" 
             + "firstname:"
