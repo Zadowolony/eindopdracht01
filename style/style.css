@@ -139,17 +139,25 @@ tr td{
     margin: auto;
     padding: 100px 0;
 }
-.main-about-container {
+
+.about-container-full {
 
    position: relative;
 }
+.main-about-container {
 
-.text{
+   
+   width: 1200px;
+   margin: auto;
+ 
+}
+
+.about-box-left{
     width: 45%;
     text-align: justify;
 }
 
-.pict{
+.about-box-right{
    display: flex;
    flex-direction: column;
    justify-content: end;
@@ -157,7 +165,7 @@ tr td{
 }
 
 
-.text h1{
+.about-box-left h1{
     color:  #A2D5C6;
     /* padding-left: 150px; */
     padding-top: 50px;
@@ -166,7 +174,7 @@ tr td{
     text-align: left;
 }
 
-.text p{
+.about-box-left p{
    padding-right: 150px;
    padding-bottom: 5px;
    font-family:'Work Sans', sans-serif;
@@ -184,34 +192,35 @@ tr td{
 
    position: absolute;
    right: 0;
+   top: 20;
    z-index: -1;
 
 }
 
-/* @media only screen and (max-width: 3000px) {
+ @media only screen and (max-width: 3000px) {
     #specialimg {
 
-      width: 1000px;
-      height: 2000px;
+      width: 600px;
+      height: 500px;
     }
  }
 
  
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 2400px) {
    #specialimg {
 
      width: 500px;
-     height: 300px;
+     height: 400px;
    }
-} */
+} 
 
 
 /* afkorting Rafal Leyla voor de image */
 
-.rl{
+/* .rl{
    position: absolute;
    right: 200px;
-}
+} */
 
 .rl p{
     display: flex;
@@ -237,37 +246,49 @@ span{
 /*description */
 
 .description{
-    background-image: url("../images/cocktail.png");
+   
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), url("../images/Eccellenza_banner_table.jpg"), lightgray 50% / cover no-repeat;
+
+
     /* background-size:fixed; */
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+   
     background-attachment: fixed;
-    width: 100%;
+    
+    
+    
    
 }
 
 .description-container {
 
-
    display: flex;
-   justify-content: flex-end;
-  /* margin: auto; */
+   align-items: center;
+   height: 400px;
+   width: 1200px;
+   margin: auto;
 }
 
-.description h2{
+
+.description-container h2{
     color: white;
-    font-size: 30px;
+    font-size: 36px;
+    /* width: 500px; */
+    margin: auto;
     text-align: right;
-    padding: 0 100px 150px 350px;
-    padding-left: 350px;
-    padding-right: 50px;
-   
     
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  
+ }
+
+ #description-text {
+
+   padding-left : 200px;
  }
 
  /* gallery */
@@ -276,6 +297,7 @@ span{
     display: flex;
     flex-direction: column;
     padding: 80px 50px;
+    
 
     
 
