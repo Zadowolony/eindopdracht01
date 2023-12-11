@@ -190,16 +190,11 @@ function verstuur() {
 
     timeTxt = document.getElementById("time").value;
     dateTxt = document.getElementById("date").value;
-    tableTxt = document.getElementById("table").selectedIndex;
+
+    // tableTxt = document.getElementById("table").selectedIndex;
 
 
     
-    
-
-    
-
-   
-
 
     allesCorrectIngevuld = true;
 
@@ -289,7 +284,7 @@ function verstuur() {
 
 
 
-            document.write("Alles is correct ingevuld");
+           
             let link = "mailto:" + encodeURIComponent("rafal.zado92@hotmail.com")
             + "?cc=" + encodeURIComponent("rafal.zado92@hotmail.com")
             + "&subject=" + encodeURIComponent("Form validation")
