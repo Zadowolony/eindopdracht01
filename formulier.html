@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style/header_reservation.css">
     
     <title>Eccellenza Reservation</title>
+
+    <style>
+
+
+
+    </style>
 </head>
 <body>
 
@@ -53,62 +59,101 @@
         <div class="reservation-title">Make A Reservation</div>
     <section class="formm">
       
-        <form action="#" method="post">
+        <form id="formulier">
             <div class="form-container">
             <div class="form-left">
                
                 <div class="form-box1">
-                    <label for="lunch-diner">Lunch/diner:</label>
+                    <label class="label-name" for="lunch-diner">Lunch/diner:</label>
                     <select name="lunch-diner" id="lunch-diner">
-                     <option disabled selected> Make a choice </option>
+                     <option value=""> Make a choice </option>
                      <option value="Lunch">Lunch</option>
-                     <option value="Diner">Diner</option>
-     
+                     <option value="Diner">Diner</option> 
                     </select>
+                    <span class="error" id="lunch_diner_error"></span>
                 </div>
 
                 <div class="form-box1">
-                    <label for="persons">Persons: </label>
+                    <label class="label-name" for="persons">Persons: </label>
                     <select name="persons" id="persons">
                      <option disabled selected> Make a choice </option>
                      <option value="1">1</option>
                      <option value="2">2</option>
                      <option value="3">3</option>
                      <option value="4">4</option>
-                     <option value="1">5</option>
-                     <option value="2">6</option>
+                     <option value="5">5</option>
+                     <option value="6">6</option>
                     </select>
+                    <span class="error" id="persons_error"></span>
                 </div>
                 
                 <div class="form-box1">
-                     <label for="time">Time: </label>
+                     <label class="label-name" for="time">Time: </label>
                      <input type="time" id="time" name="time" min="12:00" max="20:00" required/>
+                     <span class="error" id="time_error"></span>
                 </div>
 
 
                 <div class="form-box1">
-                     <label for="date">Date:</label>
+                     <label class="label-name" for="date">Date:</label>
                      <input type="date" id="date" name="date" value="08-12-2023" min="01-01-2023" max="01-01-2030" />
+                     <span class="error" id="date_error"></span>
                 </div>
 
             
                      <div class="form-box1 table">
                         <div class="table-box-top">
                         <p>Choose a table:</p>
+                        <span for="error" id="table_error"></span>
                         </div>
                         <div class="table-box-bottom">
-                            <div class="box">1</div>
-                            <div class="box">2</div>
-                            <div class="box">3</div>
-                            <div class="box">4</div>
-                            <div class="box">5</div>
-                            <div class="box">6</div>
-                            <div class="box">7</div>
-                            <div class="box">8</div>
-                            <div class="box">9</div>
-                            <div class="box">10</div>
-                            <div class="box">11</div>
-                            <div class="box">12</div>
+
+                            <input type="radio" name="table" id="table">
+                            <label for = "table" class="table-box">1</label>
+
+                            <input type="radio" name="table" id="table2">
+                            <label for="table2" class="table-box">2</label>
+
+                            <input type="radio" name="table" id="table3">
+                            <label for="table3"class="table-box">3</label>
+
+                            <input type="radio" name="table" id="table4">
+                            <label for="table4" class="table-box" >4</label>
+
+                            
+                            <input type="radio" name="table" id="table5">
+                            <label for="table5" class="table-box" >5</label>
+
+                            
+                            <input type="radio" name="table" id="table6">
+                            <label for="table6" class="table-box" >6</label>
+
+                            
+                            <input type="radio" name="table" id="table7">
+                            <label for="table7" class="table-box" >7</label>
+
+                            
+                            <input type="radio" name="table" id="table8">
+                            <label for="table8" class="table-box" >8</label>
+
+                            
+                            <input type="radio" name="table" id="table9">
+                            <label for="table9" class="table-box" >9</label>
+
+                            
+                            <input type="radio" name="table" id="table10">
+                            <label for="table10" class="table-box" >10</label>
+
+                            
+                            <input type="radio" name="table" id="table11">
+                            <label for="table11" class="table-box" >11</label>
+
+                            
+                            <input type="radio" name="table" id="table12">
+                            <label for="table12" class="table-box" >12</label>
+
+                            
+             
                         </div>
                      </div>
                 
@@ -118,31 +163,35 @@
             <div class=" form-right">
                 <div class="fullname">
                     <div class="form-box1 firstname"> 
-                        <label for="firstname">Firstname:</label>
-                        <input type="text" id="firstname" name="firstname">
+                        <label class="label-name" for="firstname">Firstname:</label>
+                        <input type="text" id="firstname">
+                        <span class="error" id="firstname_error"></span>
                     </div>
                     <div class="form-box1 lastname">
-                        <label for="lastname">Lastname:</label>
-                        <input type="text" id="lastname" name="lastname">
+                        <label class="label-name" for="lastname">Lastname:</label>
+                        <input type="text" id="lastname">
+                        <span class="error" id="lastname_error"></span>
                     </div>
                 </div>
                 <div class="form-box1 form-email"> 
-                    <label for="email">E-mail:</label>
+                    <label class="label-name" for="email">E-mail:</label>
                     <input type="email" id="email" name="email">
+                    <span class="error" id="email_error"></span>
                 </div>
                 
                 <div class="form-box1 form-tel">
-                    <label for="tel">Telephone:</label>
+                    <label class="label-name" for="tel">Telephone:</label>
                     <input type="tel" id="tel" name="tel"/>
+                    <span class="error" id="tel_error"></span>
                 </div>
 
 
                 <div class="form-box1 form-text">
-                    <label for="text">Something we should know?</label>
+                    <label class="label-textarea" for="text">Something we should know?</label>
                     <textarea id="text" for="text" name="text" rows="4" cols="50"></textarea>
                 </div>
 
-                <div class="form-box1 form-newsletter">
+                <!-- <div class="form-box1 form-newsletter">
                     <label for="news">Sign in for us newsletter</label>
 
                     <div class="yesno"> 
@@ -154,18 +203,19 @@
                         <input type="radio" id="news" name="news" value="no">
                         <label for="no">No</label>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="form-box1 form-check">
          
-                    <div><label for="check">I accept the terms and conditions.  
+                    <div><label for="checkbox">I accept the terms and conditions.  
                     </label></div>
                     <div><input type="checkbox" id="checkbox" name="checkbox" unchecked></div>
+                    <span class="error" id="checkbox_error"></span>
 
                 </div>
 
                 <div class="form-box1 form-bttn">
-                     <input type="submit" id="send" value="Send">
+                     <input type="button"  value="Send" id="knop_verstuur" onclick="verstuur()">
                 </div>
 
             </div>
@@ -186,5 +236,6 @@
     </footer>
 
     <script src="js_rafal/header.js"></script> 
+    <script src="JavaScript/controleFormulier.js"></script>
 </body>
 </html>
