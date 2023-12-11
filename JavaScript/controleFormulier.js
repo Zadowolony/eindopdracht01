@@ -284,7 +284,7 @@ function verstuur() {
 
 
 
-           
+            document.write("")
             let link = "mailto:" + encodeURIComponent("rafal.zado92@hotmail.com")
             + "?cc=" + encodeURIComponent("rafal.zado92@hotmail.com")
             + "&subject=" + encodeURIComponent("Form validation")
@@ -324,6 +324,7 @@ function verstuur() {
             // + encodeURIComponent(checkTxt)
             // + encodeURIComponent("\r\n\n")
             window.location.href = link;
+            window.location.href = "index.html";
 
             
 
