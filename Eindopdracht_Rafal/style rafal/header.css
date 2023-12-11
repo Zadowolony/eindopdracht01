@@ -26,7 +26,8 @@ font-family: 'Work Sans', sans-serif; */
     transition: background-color 500ms;
     
 
-    z-index: 999;  
+    z-index: 999; 
+   
 }
 
 .primary-header.sticking {
