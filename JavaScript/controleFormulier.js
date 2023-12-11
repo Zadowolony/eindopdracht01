@@ -324,7 +324,8 @@ function verstuur() {
             // + encodeURIComponent(checkTxt)
             // + encodeURIComponent("\r\n\n")
             window.location.href = link;
-            window.location.href = "index.html";
+            window.location.href = "formuliersucces.html";
+        
 
             
 
