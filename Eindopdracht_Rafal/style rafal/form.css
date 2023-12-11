@@ -6,16 +6,6 @@
 font-family: 'Josefin Slab', serif;
 font-family: 'Work Sans', sans-serif; */
 
-<<<<<<< Updated upstream
-/* even bij nemen niet overnemen */
-
-*{
-
-   margin: 0;
-}
-
-/* ------------------------------------ */
-=======
 
 .main-form-container {
 
@@ -26,7 +16,6 @@ font-family: 'Work Sans', sans-serif; */
 
 
 /* Form */
->>>>>>> Stashed changes
 .formm{
     display: flex;
     justify-content: center;
@@ -272,22 +261,6 @@ body {
  }
 
 
-<<<<<<< Updated upstream
- /* Verder pagina */
-
- .main-form-container {
-
-   /* Dit heb ik overgenomen vanuit Figma  */
-   background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../image_rafal/Eccellenza\ Bar.jpg), lightgray 50% / cover no-repeat;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover; 
-   height: 100vh;
-
-   display: flex;
-
- }
-=======
  /* FOOTER later verwijderen */
 
  footer{
@@ -304,7 +277,6 @@ footer p{
 
 
 
->>>>>>> Stashed changes
  
  
  footer{
