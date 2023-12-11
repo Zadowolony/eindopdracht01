@@ -180,7 +180,7 @@ span{
    flex-direction: column;
    padding: 80px 50px;
    width: 1200px;
- margin: auto;
+   margin: auto;
    
 
 }
@@ -194,10 +194,6 @@ span{
    
 }
 
-.gallery-content{
-
-
-}
 
 .column-1{
    display: flex;
