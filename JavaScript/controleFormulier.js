@@ -23,6 +23,7 @@ let dateTxt;
 let tableTxt;
 
 
+
 let allesCorrectIngevuld = true;
 
 
@@ -148,6 +149,22 @@ function controleerVoorwaardenTel(){
 
 }
 
+function sendMail() {
+    let link = "mailto:" + encodeURIComponent("rafal.zado92@hotmail.com")
+    + encodeURIComponent(document.getElementById('rafal.zado92@hotmail.com').value)
+    + "?cc=" + encodeURIComponent("hetCCadres@example.com;tweedeCCadres@example.com")
+      + "&subject=" + encodeURIComponent("Dit is het onderwerp")
+      + "&body="
+      + "naam:"
+      + encodeURIComponent(document.getElementById('firstname').value)
+      + encodeURIComponent("\r\n\n")
+      + "bericht:"
+      + encodeURIComponent(document.getElementById('lastname').value);
+      window.location.href = link;
+  //zorgt voor versturing naar mail programma
+      }
+  
+
 
 
 
@@ -173,8 +190,13 @@ function verstuur() {
 
     timeTxt = document.getElementById("time").value;
     dateTxt = document.getElementById("date").value;
+    tableTxt = document.getElementById("table").selectedIndex;
 
-    let isTableValid = controleerVoorwaardenTable();
+
+    
+    
+
+    
 
    
 
@@ -215,7 +237,7 @@ function verstuur() {
         controleerVoorwaardenDate();
     }
 
-    if(!isTableValid){
+    if(tableTxt == 0){
         document.getElementById("table_error").innerHTML = "Kies een tafeloptie.";
         allesCorrectIngevuld = false;
     } else {
@@ -264,11 +286,27 @@ function verstuur() {
 
 
         if(allesCorrectIngevuld){
+
+
+
             document.write("Alles is correct ingevuld");
-            let link = "mailto:" + encodeURIComponent("ferhan.96@hotmail.com")
-            + "?cc=" + encodeURIComponent("ferhan.96@hotmail.com")
+            let link = "mailto:" + encodeURIComponent("rafal.zado92@hotmail.com")
+            + "?cc=" + encodeURIComponent("rafal.zado92@hotmail.com")
             + "&subject=" + encodeURIComponent("Form validation")
             + "&body=" 
+            + "firstname:"
+            + encodeURIComponent(firstNameTxt)  
+            + encodeURIComponent("\r\n\n")
+            + "lastname:"
+            + encodeURIComponent(lastNameTxt)
+            + encodeURIComponent("\r\n\n")
+            + "email:"
+            + encodeURIComponent(emailTxt)
+            + encodeURIComponent("\r\n\n")
+            + "tel:"
+            + encodeURIComponent(telTxt)  
+            + encodeURIComponent("\r\n\n")
+
             + "lunch-diner:" 
             + encodeURIComponent(lunchDinerTxt) 
             + encodeURIComponent("\r\n\n")
@@ -280,20 +318,17 @@ function verstuur() {
             + encodeURIComponent("\r\n\n")
             + "date:"
             + encodeURIComponent(dateTxt)
-            + "firstname:"
-            + encodeURIComponent(firstNameTxt)  
             + encodeURIComponent("\r\n\n")
-            + "lastname:"
-            + encodeURIComponent(lastNameTxt)
+            + "table:"
+            + encodeURIComponent(tableTxt)  
             + encodeURIComponent("\r\n\n")
-            + "email:"
-            + encodeURIComponent(emailTxt)
-            + "tel:"
-            + encodeURIComponent(telTxt)  
-            + encodeURIComponent("\r\n\n")
-            + "check:"
-            + encodeURIComponent(checkTxt)
-            + encodeURIComponent("\r\n\n")
+            
+            
+           
+            // + "check:"
+            // + encodeURIComponent(checkTxt)
+            // + encodeURIComponent("\r\n\n")
+            window.location.href = link;
 
             
 
@@ -306,4 +341,3 @@ function verstuur() {
 
     
 
-}
