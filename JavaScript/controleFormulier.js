@@ -68,9 +68,14 @@ function  controleerVoorwaardenDate(){
     }else {
         let ingevoerdeDatum = new Date(dateTxt);
         let huidigeDatum = new Date();
+        ingevoerdeDatum.setHours(0, 0, 0, 0);
+        huidigeDatum
+
+        console.log(ingevoerdeDatum);
+        console.log(huidigeDatum);
 
         // Vergelijk de ingevoerde datum met de huidige datum
-        if (ingevoerdeDatum < huidigeDatum) {
+        if (ingevoerdeDatum < huidigeDatum ) {
             document.getElementById("date_error").innerHTML = "Choose a future date.";
             allesCorrectIngevuld = false;
         } else {
@@ -87,6 +92,7 @@ function controleerVoorwaardenTable() {
 
     for (let i = 0; i < tableRadios.length; i++) {
         if (tableRadios[i].checked) {
+            tableTxt = tableRadios[i].id;
             checked = true;
             break;
         }
@@ -94,10 +100,10 @@ function controleerVoorwaardenTable() {
 
     if (!checked) {
         tableError.innerHTML = "Choose an option.";
-        return false; // Geen tafeloptie geselecteerd
+        allesCorrectIngevuld = false; // Geen tafeloptie geselecteerd
     } else {
         tableError.innerHTML = "";
-        return true; // Tafeloptie geselecteerd
+        allesCorrectIngevuld =  true; // Tafeloptie geselecteerd
     }
 }
 
