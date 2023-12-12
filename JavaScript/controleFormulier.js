@@ -51,15 +51,32 @@ let allesCorrectIngevuld = true;
 // }
 
 function controleerVoorwaardenTime(){
+   //let currentTime = new Date.getTime();
+   //let minTime = new Date.getTime("12:00");
+   //let maxTime = new Date.getTime("22:00");
+   
+   let ingevoerdeTijd = parseInt(timeTxt);
+
+
+
+    
 
     if( timeTxt == ""){
         document.getElementById("time_error").innerHTML = "Invalid time";
         allesCorrectIngevuld = false;
     }else {
+         
+        if((ingevoerdeTijd < 12 || ingevoerdeTijd > 12 ) && (ingevoerdeTijd < 19 || ingevoerdeTijd > 22 )) {
+            document.getElementById("time_error").innerHTML = "Please select opening time";
+            allesCorrectIngevuld = false;
+        }
+        else{
+
         document.getElementById("time_error").innerHTML = "";
     }
 }
 
+}
 function  controleerVoorwaardenDate(){
 
     if(dateTxt == ""){
@@ -112,7 +129,7 @@ function controleerVoorwaardenVoornaam(){
 
    
 
-    if(firstNameTxt.length < 2 || lastNameTxt.lenght < 2) {
+    if(firstNameTxt.length < 2 || lastNameTxt.length < 2) {
         document.getElementById("firstname_error").innerHTML="It has to be 2 or more charachters";
         document.getElementById("lastname_error").innerHTML="It has to be 2 or more charakters.";
        
