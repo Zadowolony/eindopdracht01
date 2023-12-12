@@ -64,9 +64,11 @@ function controleerVoorwaardenTime(){
     if( timeTxt == ""){
         document.getElementById("time_error").innerHTML = "Invalid time";
         allesCorrectIngevuld = false;
+
+        
     }else {
          
-        if((ingevoerdeTijd < 12 || ingevoerdeTijd > 12 ) && (ingevoerdeTijd < 19 || ingevoerdeTijd > 22 )) {
+        if((ingevoerdeTijd <= 12 || ingevoerdeTijd >= 17 ) && (ingevoerdeTijd <= 19 || ingevoerdeTijd >= 22 )) {
             document.getElementById("time_error").innerHTML = "Please select opening time";
             allesCorrectIngevuld = false;
         }
