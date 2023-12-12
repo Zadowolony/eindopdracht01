@@ -68,7 +68,7 @@ function controleerVoorwaardenTime(){
         
     }else {
          
-        if((ingevoerdeTijd <= 12 || ingevoerdeTijd >= 17 ) && (ingevoerdeTijd <= 19 || ingevoerdeTijd >= 22 )) {
+        if((ingevoerdeTijd < 12 || (ingevoerdeTijd >= 17  && ingevoerdeTijd < 19) || ingevoerdeTijd >= 22 )) {
             document.getElementById("time_error").innerHTML = "Please select opening time";
             allesCorrectIngevuld = false;
         }
@@ -81,14 +81,15 @@ function controleerVoorwaardenTime(){
 }
 function  controleerVoorwaardenDate(){
 
-    if(dateTxt == ""){
+    if(dateTxt.length === ""){
         document.getElementById("date_error").innerHTML ="Invalid date";
+        
         allesCorrectIngevuld = false;
     }else {
         let ingevoerdeDatum = new Date(dateTxt);
         let huidigeDatum = new Date();
         ingevoerdeDatum.setHours(0, 0, 0, 0);
-        huidigeDatum
+        huidigeDatum.setHours(0,0,0,0);
 
         console.log(ingevoerdeDatum);
         console.log(huidigeDatum);
@@ -122,7 +123,6 @@ function controleerVoorwaardenTable() {
         allesCorrectIngevuld = false; // Geen tafeloptie geselecteerd
     } else {
         tableError.innerHTML = "";
-        allesCorrectIngevuld =  true; // Tafeloptie geselecteerd
     }
 }
 
@@ -225,7 +225,10 @@ function verstuur() {
     timeTxt = document.getElementById("time").value;
     dateTxt = document.getElementById("date").value;
 
-    // tableTxt = document.getElementById("table").selectedIndex;
+    console.log(timeTxt.length);
+    console.log(dateTxt.length);
+
+  
 
 
     
@@ -237,7 +240,7 @@ function verstuur() {
         allesCorrectIngevuld= false;
 
     }else {
-        document.getElementById("lunch-diner").innerHTML="";
+        document.getElementById("lunch_diner_error").innerHTML="";
   
         
     }
@@ -249,17 +252,17 @@ function verstuur() {
         // personsTxt = document.getElementById("persons").value;
         // controleerVoorwaardenPersons();
 
-        document.getElementById("persons").innerHTML="";
+        document.getElementById("persons_error").innerHTML="";
     }
 
-    if(timeTxt == 0){
+    if(timeTxt.length == 0){
         document.getElementById("time_error").innerHTML="Choose time.";
         allesCorrectIngevuld = false;
     }else {
         controleerVoorwaardenTime();
     }
 
-    if(dateTxt == 0){
+    if(dateTxt.length == 0){
         document.getElementById("date_error").innerHTML="Choose date.";
         allesCorrectIngevuld = false;
     }else {

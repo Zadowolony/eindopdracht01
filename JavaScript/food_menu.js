@@ -1,3 +1,6 @@
+"use strict"
+
+
 let content1 = document.getElementById("content1");
 let content2 = document.getElementById("content2");
 let content3 = document.getElementById("content3");
